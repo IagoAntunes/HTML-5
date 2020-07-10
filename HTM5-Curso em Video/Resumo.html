@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>RESUMO AULA 07</h1>
+    <h1>RESUMO AULA 06</h1>
     <pre>
     &lt;hgroup&gt; - Agrupar as linhas,podendo altera-las com um padrão
     &lt;br&gt;     - Quebra de linhas
@@ -17,7 +17,7 @@
     video &ampshy;con&ampshy;ferên&ampshy;cias  (Videoconferencias)
     
 
-    <h1>RESUMO AULA 08</h1>
+    <h1>RESUMO AULA 07</h1>
 
     &ltb&gt      -  <b>Negrito</b>
     &lti&gt      -  <i>Italico</i>
@@ -50,6 +50,198 @@
     &ltsup&gt                                  - Exemplo<sup>Formatação</sup>
     &ltsub&gt                                  - Exemplo<sub>Formatação</sub>
     &ltpre&get                               - Considera Espaços,Enter
+
+
+    <h1>RESUMO AULA 08</h1>
+
+    &ltbody bgcolor"red"&gt      - Cor do Fundo(ultrapassado)
+    style="background-color: red;"   - Cor do Fundo(Atual)
+    body{
+      background-image: url("star.jpg");    - Imagem de Fundo
+      background-color: black ;             - Cor de Fundo
+      color: red;                           - Cor das Letras
+  }
+
+  # 00000     - Modo antigo  Cor
+  rgb(0,0,0)  - verm,verd,azul  
+  rgba(0,0,0,0)   - verm,verd,azul,transparen
+  background-color:hsl(hue, saturation, lightness)  
+  background-color:hsla(hue, saturation, lightness, alpha)  
+
+
+
+
+  <h1>RESUMO AULA 09</h1>
+ 
+  &ltimg src="star.jpg"&gt       - Colocar Imagem
+  &ltimg src="star.jpg"width="200"&gt   - Ajustar Tamanho
+
+  &ltfigure>
+    &ltimg src="_Imagens/glass-quadro-homem-mulher.jpg"/>   - Imagem,com a pasta de Localização
+    &ltfigcaption&gt                                        -Local de Imagems
+        &lth3> Google Glass&lt /h3&gt                       - Pode-se Colocar Legendas
+        &ltp> Oculos da Google &lt/p&gt
+    &lt/figcaption&gt
+&lt/figure&gt
+
+
+<h1>RESUMO AULA 10</h1>
+
+&lt figure class="foto-legenda"&gt &lt/figure&gt           - Definir uma Classe no HTML
+
+figure.foto-legenda{                               - Tudo que estiver na class foto-legenda
+  border: 8px solid red;                           - Borda 8Pixel , Solido , Vermelho
+}
+figure.foto-legenda img{                           - Tudo que estiver na class foto legenda e for img
+  width: 100%;                                     - Largura
+  height:100%;                                     - Altura
+  box-shadow: 1px 1px 4px black;                   - Sombra na Imagem
+}
+
+position: relative;
+
+figure.foto-legenda figcaption{
+  opacity: 0;                                      -Opacidade da Legenda Padrão
+  position: absolute;                              - Posição dentro da Imagem
+  top: 0px;                                        - Pixel Posição
+  background-color: rgba(0,0,0,0.4);               -Cor Fundo legenda,transparencia
+  width: 100%;                                     - Altura,Background
+  height: 100%;                                    - Largura,Background
+  padding: 10px;                                   -Espaço dentor da legenda
+  box-sizing: border-box;                          -Va criar um box dentro da borda
+  transition: opacity 1s;                          -Demora da Opacidade
+}
+
+figure.foto-legenda:hover figcaption{              -Efeito do mouse(hover)   
+  opacity: 1;                                      -Quando passar o mouse por cima,opacidade 1
+}
+
+<h1>RESUMO AULA 11</h1>
+
+&ltnav&gt   - Tudo que estiver entre eles,sera menu de navegação
+
+  &ltol&gt&lt/ol&gt     -Tudo que estiver entre Ol,vai ser uma lista ORDENADA
+  
+
+  &lt li &gt            - Colocar cada item na lista
+
+  &ltol type="a" &gt    - Numerar letras
+  &ltol type="A" &gt    - Numerar letras Maiusculas
+
+  &ltol type="1" &gt    - Numerar Numeros
+  &ltol type="1" start="3" &gt    - Numerar Numeros começa do 3
+
+  &ltol type="i" &gt    - Numerar Algarismo Romano
+  &ltol type="i" &gt    - Numerar Algarismo Romano Maiusculo
+  &ltol type="i" start="3" &gt    - Numerar Algarismo Romano do 3
+
+  &ltul&gt&lt/ul&gt     -Tudo que estiver entre Ol,vai ser uma lista  NÃO ORDENADA
+
+  &ltul type="square" - Numerar Algarismo Romano do 3
+  &ltul type="circle" - Numerar Algarismo Romano do 3
+  &ltul type="disc"   - Numerar Algarismo Romano do 3
+
+  Tem como colocar 2 listas dentro da outra
+
+  <h1>RESUMO AULA 12</h1>
+
+
+  &lthref&gt                                                          -HREF. Ele cria uma referência hipertexto para outras páginas.
+  &lta href="https://www.google.com/glass/start/" Project Glass     - Direcionar para outro site
+  target="_blank"&gtProject Glass                                   - Ao clicar,abre outra aba
+  target="_self"gtProject Glass                                   -Ao clicar,abre na mesma página
+
+  &lta href="https://www.google.com/glass/start/" target="_blank"&gtProject Glass
+
+  <h1>RESUMO AULA 13</h1>
+
+  &lt nav id="menu" &gt
+
+  nav#menu{                             - ID do Menu
+    display: block;                     - Menu como Bloc, flutue pela tela
+
+}
+nav#menu ul {                           -Tudo que for ID menu e estiver em UL
+    list-style: none;                   - Tirar os marcados
+    text-transform: uppercase;          - Colocar em Letra Maiuscula
+    position: absolute;                 - A caixa pode ser em qualquer parte do site
+    top: -25px;                         - Altura do Menu
+    left: 300px;                        - Lado do Menu
+ 
+}
+
+nav#menu li{                               -
+    display: inline-block;                 - Colocar Menu horizontal
+    background-color: rgb(148, 26, 142);   - Cor de fundo 
+    padding: 10px;                         - Espaço no Botão
+    margin: 8px;                           - Espaço Fora do Botão,distancia entre eles
+}
+
+nav#menu h1{ 
+    display: none;                         - Retirar titulo Menu principal
+}
+  
+<h1>RESUMO AULA 14</h1>
+
+transition: background-color 1s;    - Mudar cor de fundo,demora 11 seg
+background-color: #606060;          - Mudar cor de Fundo,passar mouse
+
+nav#menu h1{
+  display: none;                    - Tirar Traço Link
+}
+
+nav#menu a{                         - Todo Link
+  color:black;                      - Cor preta
+  text-decoration: none;            - Sem Sunlinhado
+}
+
+nav#menu a:hover{
+  color: white;                     - Mudar Cor das palavras,mouse
+}
+
+<h1>RESUMO AULA 15</h1>
+
+div#interface{                      - Tudo que estiver na Interface
+  width: 900px;                                     - Largura
+  background-color:rgba(255, 255, 255, 0.281);      - Cor de Fundo
+  margin: -20px auto 10px auto;                     - Margem cima,direita,baixo,esquerda
+  box-shadow: 0px 0px 10px black;                   - Sombra deslocamento L,deslocamento V,Espalhamento Somb,cor
+  padding: 10px 10px 10px 10px;
+  padding: 10px;                    
+}
+
+header#cabecalho img#icone{
+  position: absolute;                                - Posição Site toda
+  left: 800px;                                      
+  top: 50px;
+}
+
+<h1>RESUMO AULA 16</h1>
+
+
+
+header#cabecalho{
+  border-bottom: 1px black solid;                - Tipos de Borda    ,largura,Cor,Formato
+  height: 150px;                                 - Altura
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;   - imagem background , Não repetir,deslocamento L, deslocamento V
+}
+
+header#cabecalho h1{
+  font-family: Arial,sans-serif;                 - Fonte do Texto
+  font-size: 30px;                               - Tamanho da Fonte
+  color: rgb(68, 64, 64);
+  text-shadow: 1px 1px 1px black;                - Sombra da Fonte
+  padding: 0px;                                  - 
+  margin-bottom: 0px;                            - Tirar margem abaixo(diminuir distancia)
+}
+
+header#cabecalho h2{
+  font-family: Arial,sans-serif;
+  color: #494848;
+  font-size: 20px;
+  padding: 0px;
+  margin-top: 0px;                              - Tirar margem acima(diminuir Distancia)
+}
 
 </pre>
 
