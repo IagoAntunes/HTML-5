@@ -284,12 +284,133 @@ border-spacing: 0px;                                                       - mod
 
 text-decoration: underline;                               - Coloca Underline 
 
+<h1>RESUMO AULA 22</h1>
+Historia , comandos simples JavaScript
+
+<h1>RESUMO AULA 23</h1>
+Interação de Ojbeto,Lampada
+
+&ltstring&gt &ltstring/&gt                                                - O que tiver dentro é JAVASCRIPT1
+
+function (nome)  (){                                                      - Função
+
+}
+document.getElementById("Luz").src="_imagens/lampada-quebrada.jpg";       - Trocar Imagem do ID
+
+onmousemove="acendeLampada()"                                             - Passar o Mouse acende a lampada
+onmouseout="apagaLampada()"                                               - Tirar o Mouse apaga
+onclick="quebraLampada()"/>                                               - Clica quebra
+
+<h1>RESUMO AULA 24</h1>
+Funções que passam parametro
+
+if(!quebrada){                                                            - Se for diferente de Verdadeiro
+  document.getElementById("luz").src= "_imagens/"+ tipo + ".jpg";         - Receber valor do parametro
+  if(tipo == 'lampada-quebrada'){
+      quebrada = true;
+  }
+}
+
+<h1>RESUMO AULA 26</h1>
+-Configurando parte do OCULOS do site
+
+&ltimg src="_imagens/mao.png" alt="Mão apontando para a esquerda"/&gt        - Alt,é um comentario,para achar melhor
+img.img-dir{                                                                 - Toda classe é ponto  .
+
+<h1>RESUMO AULA 27</h1>
 
 
+
+<h1>RESUMO AULA 28</h1>
+Configurando Interação com o Oculos
+
+&ltsection id="conteudo"&gt                                                     
+  &ltimg src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/&gt            -Configurando a Imagem do oculos,no clique
+  &ltmap name="meumapa"&gt                                                         - Click do mouse vai levar ao endereço
+      &ltarea shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" /&gt     - Formato / Coordenadas / endereço / nome     PHOTOSHOP  
+
+<h1>RESUMO AULA 29</h1>
+Criando Album de fotos
+
+&ltli id="foto01"><span>- Agenda e lembretes&çt/span&gt&lt/li&gt                 - (Li) cria lista
+  background: url('../_imagens/galeria-03.jpg');                                 - Coloca fundo,imagem
+
+
+<h1>RESUMO AULA 30</h1>
+Colocando efeito Imagem        
+
+<h1>RESUMO AULA 31</h1>
+Colocando Audio,Video
+
+&ltdiv id="tv-radio">                                                                             - Identificando Audio
+  &ltaudio id="musica" controls="controls">                                                       - Tag de audio,Mostra os controles padrão para o áudio na página.
+      &ltsource src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"  />                 - Opções de audio,navegador
+      &ltsource src="_media/2009-lovers-carvings-bibio.m4a" type="audio/mpeg"  />
+      &ltsource src="_media/2009-lovers-carvings-bibio.ogg" type="audio/mpeg"  />
+      Desculpe,Mas não foi possivel carregar o audio                                              - Caso nenhuma das anteriores funcione
+  &lt/audio>
+  &ltvideo id="filme"  controls="controls" poster="_imagens/video-mini03.jpg">                    - Identificando VIDEO,colocando background
+      &ltsource src="_media/getting-started.mp4" type="video/mp4">
+      &ltsource src="_media/getting-started.webm" type="video/webm">
+      &ltsource src="_media/getting-started.ogv" type="video/ogg">
+      Desculpe,Mas não foi possivel carregar o audio
+      
+  &lt/video>
+&lt/div>
+
+
+
+<h1>RESUMO AULA 32</h1>
+
+&ltiframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt/iframe>             - Colocar Video direto youtube
+
+background: url("../_imagens/radio-tv.png") no-repeat;           - Colocando background televisão,radio
+
+<h1>RESUMO AULA 33</h1>
+Configurando Formulario PARTE 1
+
+&ltinput type="radio"                                             - Colocando Locla para digitar,com varios Tipos
+
+&ltfieldset>&ltfieldset>                                          - Coloca uma borda,separa as partes
+
+&ltlabel for="cNasc">&lt/label>                                   - Clicar no Nome(PALAVRA),para digitar,selecionar
+
+&ltlegend>&ltlegend>                                              - Legenda do Grupo
+
+<h1>RESUMO AULA 34</h1>
+-Configurando Formulário PARTE 2
+
+&ltselect>                                                         - Tipo = Selecionar
+&ltoptgroup label="Região Sudeste">&lt/optgroup>                   - Cria Grupo na Seleção
+&ltoption value="RJ" >Rio de Janeiro&lt/option>                    - Opções de Estado
+
+&ltdatalist id="cidades">                                          - Cria Uma lista predefinida de Cidades
+&ltoption value="Rio de Janeiro">&lt/option>                       - Opção da lista,rio de Janeiro
+type="range"                                                       - Tipo = Range,porcentagem,1 a 10
+&lttextarea name="tMsg" id="cMsg" cols="70" rows="5" placeholder="Deixe Aqui sua Mensagem">&lt/textarea>
+                                                                   - Mensagem,caixa de Texto é maior
+                                                                   Cols = Coluna
+                                                                   Rows = Linha
+
+<h1>RESUMO AULA 36</h1>
+-Configurando Formulario,colocando imagens 
+
+type="checkbox"                                                     - Opção de Marcar
+type="color"                                                        - Opção de Cor
+type="number"                                                       - Colocar Numeros
+type="text"                                                         - Mostrar Preço
+type="submit"                                                       - Opção Enviar
+
+&ltscript>                                                          - 
+  function calc_total() {                                           - Função de calculo
+      var qtd = parseInt(document.getElementById('cQtd').value);    - Declara variavel,com ajuda do ID pega o valor informado pelo usuario
+      tot = qtd * 1500;
+      document.getElementById('cTot').value = tot;                  - Pegar valor pelo ID
+  }
+&lt/script>
 
 
 
 </pre>
-
 </body>
 </html>
