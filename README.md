@@ -1,6 +1,6 @@
 
 # HOME DO SITE
-![a](https://imgur.com/Bttmd0n.gif)
+![](https://imgur.com/Bttmd0n.gif)
 ***
 # ESPECIFICAÇOES
 ![](https://imgur.com/52ORlgP.gif)
