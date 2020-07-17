@@ -1,5 +1,19 @@
 
-![](https://imgur.com/Bttmd0n.gif)
+# HOME DO SITE
+![a](https://imgur.com/Bttmd0n.gif)
+***
+# ESPECIFICAÇOES
+![](https://imgur.com/52ORlgP.gif)
+***
+# FOTOS
+![](https://imgur.com/7IMeZRr.gif)
+***
+# MULTIMIDIA
+![](https://imgur.com/9UzwdKx.gif)
+***
+# FALE CONOSCO
+![](https://imgur.com/8YTDrAo.gif)
+
 
 
 ***
