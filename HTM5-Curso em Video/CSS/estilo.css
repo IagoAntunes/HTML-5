@@ -14,6 +14,18 @@ body{
     color: rgba(0,0,0,1);
 }
 
+/* Tamanho Video */
+video#filme02 {
+    width: auto;
+    height: 180px;
+}
+
+/* Tamanho Video */
+video#filme01 {
+    width: auto;
+    height: 310px;
+}
+
 div#interface{
     width: 900px;
     background-color:rgb(255, 255, 255);
